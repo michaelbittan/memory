@@ -1,5 +1,5 @@
 <h2>Memory game</h2>
-
+hi
 <style>
 .game_box{
   background-color:cyan;
@@ -30,13 +30,14 @@
 card_object = {
   cards: ["a", "b", "c", "d", "a", "b", "c", "d"],
   visible_cards: []
+  selected_boxes: []
 }
 
 $(".game_box").on("click",function(){
-  var this_box_number = this.id.replace("box_", "");
-
-  console.log(this_box_number);
-  console.log(card_object.cards[this_box_number]);
+//  var this_box_number = this.id.replace("box_", "");
+  $(this).html("hi");
+//  console.log(this_box_number);
+//  console.log(card_object.cards[this_box_number]);
 });
 
 
